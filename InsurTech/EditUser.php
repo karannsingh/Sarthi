@@ -179,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div>
           <a href="ManageUsers.php" class="btn btn-primary">
             <svg class="icon me-1">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-arrow-left"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-arrow-left"></use>
             </svg>
             Back to User List
           </a>
@@ -361,13 +361,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <div class="col-12 mt-4">
                 <button class="btn btn-primary" type="submit">
                   <svg class="icon me-1">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-save"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-save"></use>
                   </svg>
                   Save Changes
                 </button>
                 <a href="ManageUsers.php" class="btn btn-secondary ms-1">
                   <svg class="icon me-1">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-x"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-x"></use>
                   </svg>
                   Cancel
                 </a>

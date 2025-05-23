@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">First Name :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-user"></use>
                         </svg></span>
                         <input class="form-control" type="text" id="FirstName" name="FirstName" placeholder="First Name" required>
                       </div>
@@ -75,7 +75,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Middle Name :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-user"></use>
                         </svg></span>
                         <input class="form-control" type="text" id="MiddleName" name="MiddleName" placeholder="Middle Name" required>
                       </div>
@@ -84,7 +84,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Last Name :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-user"></use>
                         </svg></span>
                         <input class="form-control" type="text" id="LastName" name="LastName" placeholder="Last Name" required>
                       </div>
@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Username :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-user"></use>
                         </svg></span>
                         <input class="form-control" type="text" id="UserName" name="UserName" placeholder="Username" required>
                       </div>
@@ -106,7 +106,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Mobile Number :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-phone"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-phone"></use>
                         </svg></span>
                         <input class="form-control" type="text" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" required>
                       </div>
@@ -118,7 +118,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Email :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
                         </svg></span>
                         <input class="form-control" type="email" id="Email" name="Email" placeholder="Email" required>
                       </div>
@@ -128,7 +128,7 @@ if(isset($_POST['submit'])){
                       <div class="input-group">
                         <span class="input-group-text">
                           <svg class="icon">
-                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                            <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-calendar"></use>
                           </svg>
                         </span>
                         <input class="form-control" id="DOB" name="DOB" type="date" placeholder="Date of Birthday" required>
@@ -141,7 +141,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Password :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                         </svg></span>
                         <input class="form-control" id="Password" name="Password" type="password" placeholder="Password" required>
                       </div>
@@ -150,7 +150,7 @@ if(isset($_POST['submit'])){
                       <p class="mb-0" align="left">Confirm Password :</p>
                       <div class="input-group"><span class="input-group-text">
                         <svg class="icon">
-                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                          <use xlink:href="assetss/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                         </svg></span>
                         <input class="form-control" id="CPassword" name="CPassword" type="password" placeholder="Confirm Password" required>
                       </div>  
@@ -165,8 +165,8 @@ if(isset($_POST['submit'])){
       </div>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="vendors/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
-    <script src="vendors/simplebar/js/simplebar.min.js"></script>
+    <script src="assetss/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+    <script src="assetss/simplebar/js/simplebar.min.js"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
         var element = document.getElementById('btn-dark-theme');

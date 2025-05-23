@@ -165,7 +165,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">First Name :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="FirstName" name="FirstName" placeholder="First Name" value="<?php echo isset($_POST['FirstName']) ? htmlspecialchars($_POST['FirstName']) : ''; ?>" required>
                   </div>
@@ -174,7 +174,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Middle Name :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="MiddleName" name="MiddleName" placeholder="Middle Name" value="<?php echo isset($_POST['MiddleName']) ? htmlspecialchars($_POST['MiddleName']) : ''; ?>">
                   </div>
@@ -183,7 +183,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Last Name :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="LastName" name="LastName" placeholder="Last Name" value="<?php echo isset($_POST['LastName']) ? htmlspecialchars($_POST['LastName']) : ''; ?>" required>
                   </div>
@@ -192,7 +192,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Father Name :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="FatherName" name="FatherName" placeholder="Father Name" value="<?php echo isset($_POST['FatherName']) ? htmlspecialchars($_POST['FatherName']) : ''; ?>" required>
                   </div>
@@ -201,7 +201,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Mother Name :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="MotherName" name="MotherName" placeholder="Mother Name" value="<?php echo isset($_POST['MotherName']) ? htmlspecialchars($_POST['MotherName']) : ''; ?>" required>
                   </div>
@@ -212,7 +212,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Username :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="UserName" name="UserName" placeholder="Username" value="<?php echo isset($_POST['UserName']) ? htmlspecialchars($_POST['UserName']) : ''; ?>" required>
                   </div>
@@ -224,7 +224,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Mobile Number :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" value="<?php echo isset($_POST['MobileNumber']) ? htmlspecialchars($_POST['MobileNumber']) : ''; ?>" required oninput="validateMobileNumber(this)" maxlength="10">
                   </div>
@@ -234,7 +234,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Office Mobile Number :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="OfficeMobileNumber" name="OfficeMobileNumber" placeholder="Office Mobile Number" value="<?php echo isset($_POST['OfficeMobileNumber']) ? htmlspecialchars($_POST['OfficeMobileNumber']) : ''; ?>" required oninput="validateOfficeMobileNumber(this)" maxlength="10">
                   </div>
@@ -244,7 +244,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Aadhar Number :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="Aadhar" name="Aadhar" placeholder="Aadhar Number" value="<?php echo isset($_POST['Aadhar']) ? htmlspecialchars($_POST['Aadhar']) : ''; ?>" required maxlength="12" oninput="validateAadhar(this)">
                   </div>
@@ -254,7 +254,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Pancard Number :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                     </svg></span>
                     <input class="form-control" type="text" id="Pancard" name="Pancard" placeholder="Pancard Number" value="<?php echo isset($_POST['Pancard']) ? htmlspecialchars($_POST['Pancard']) : ''; ?>" required oninput="validatePanCard(this)">
                   </div>
@@ -264,7 +264,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <p class="mb-0" align="left">Email :</p>
                   <div class="input-group"><span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
                     </svg></span>
                     <input class="form-control" type="email" id="Email" name="Email" placeholder="Email" value="<?php echo isset($_POST['Email']) ? htmlspecialchars($_POST['Email']) : ''; ?>" required>
                   </div>
@@ -276,7 +276,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-calendar"></use>
                       </svg>
                     </span>
                     <input class="form-control" id="DOB" name="DOB" type="date" placeholder="Date of Birthday" value="<?php echo isset($_POST['DOB']) ? htmlspecialchars($_POST['DOB']) : ''; ?>" required oninput="validateDOB(this)">
@@ -288,7 +288,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-calendar"></use>
                       </svg>
                     </span>
                     <input class="form-control" id="JoiningDate" name="JoiningDate" type="date" placeholder="Joining Date" value="<?php echo isset($_POST['JoiningDate']) ? htmlspecialchars($_POST['JoiningDate']) : ''; ?>" required oninput="validateJoiningDate(this)">
@@ -302,7 +302,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-layers"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-layers"></use>
                       </svg>
                     </span>
                     <select class="form-select" id="DepartmentOID" name="DepartmentOID" required>
@@ -320,7 +320,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-badge"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-badge"></use>
                       </svg>
                     </span>
                     <select class="form-select" id="DesignationOID" name="DesignationOID" required>
@@ -340,7 +340,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-location-pin"></use>
                       </svg>
                     </span>
                     <textarea class="form-control" id="Address" name="Address" placeholder="Full Address" required><?php echo isset($_POST['Address']) ? htmlspecialchars($_POST['Address']) : ''; ?></textarea>
@@ -353,7 +353,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-clock"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-clock"></use>
                       </svg>
                     </span>
                     <input class="form-control" id="ShiftStart" name="ShiftStart" type="time" required value="<?php echo isset($_POST['ShiftStart']) ? htmlspecialchars($_POST['ShiftStart']) : '10:00'; ?>">
@@ -364,7 +364,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-clock"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-clock"></use>
                       </svg>
                     </span>
                     <input class="form-control" id="ShiftEnd" name="ShiftEnd" type="time" required value="<?php echo isset($_POST['ShiftEnd']) ? htmlspecialchars($_POST['ShiftEnd']) : '19:00'; ?>">
@@ -375,7 +375,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-clock"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-clock"></use>
                       </svg>
                     </span>
                     <input class="form-control" id="LateCutoff" name="LateCutoff" type="time" required value="<?php echo isset($_POST['LateCutoff']) ? htmlspecialchars($_POST['LateCutoff']) : '10:15'; ?>">
@@ -387,7 +387,7 @@ $designations = mysqli_query($conn, "SELECT * FROM master_designation ORDER BY D
                   <div class="input-group">
                     <span class="input-group-text">
                       <svg class="icon">
-                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-clock"></use>
+                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-clock"></use>
                       </svg>
                     </span>
                     <input type="number" class="form-control" id="idle_timeout" name="idle_timeout" min="1" required value="<?php echo isset($_POST['idle_timeout']) ? htmlspecialchars($_POST['idle_timeout']) : '10'; ?>">

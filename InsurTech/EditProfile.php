@@ -54,7 +54,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">First Name :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="FirstName" name="FirstName" placeholder="First Name" value="<?php echo htmlspecialchars($row['FirstName']); ?>" required>
               </div>
@@ -63,7 +63,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Middle Name :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="MiddleName" name="MiddleName" placeholder="Middle Name" value="<?php echo $row['MiddleName'];?>" required>
               </div>
@@ -72,7 +72,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Last Name :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="LastName" name="LastName" placeholder="Last Name" value="<?php echo $row['LastName'];?>" required>
               </div>
@@ -81,7 +81,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Employee Code ID :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="EmpCode" name="EmpCode" placeholder="EmpCode" value="<?php echo $row['EmpCode'];?>" disabled>
               </div>
@@ -91,7 +91,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Father Name :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="FatherName" name="FatherName" placeholder="Father Name" value="<?php echo $row['FatherName'];?>" disabled>
               </div>
@@ -101,7 +101,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Mother Name :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="MotherName" name="MotherName" placeholder="Mother Name" value="<?php echo $row['MotherName'];?>" disabled>
               </div>
@@ -111,7 +111,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Username :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="UserName" name="UserName" placeholder="Username" value="<?php echo $row['UserName'];?>" required>
               </div>
@@ -121,7 +121,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Mobile Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" value="<?php echo $row['Number'];?>" disabled>
               </div>
@@ -130,7 +130,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Office Mobile Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="OfficeMobileNumber" name="OfficeMobileNumber" placeholder="Office Mobile Number" maxlength="10"
                  value="<?php echo $row['OfficeMobileNumber'];?>" required oninput="validateMobileNumber(this)">
@@ -141,7 +141,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Aadhar Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="Aadhar" name="Aadhar" placeholder="Aadhar Number" value="<?php echo $row['AadharNumber'];?>" disabled>
               </div>
@@ -151,7 +151,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Pancard Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="Pancard" name="Pancard" placeholder="Pancard Number" value="<?php echo $row['PancardNumber'];?>" disabled>
               </div>
@@ -161,7 +161,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Email :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
                 </svg></span>
                 <input class="form-control" type="email" id="Email" name="Email" placeholder="Email" value="<?php echo $row['Email'];?>" disabled>
               </div>
@@ -171,7 +171,7 @@ require('include/right-side-navbar.php');
               <div class="input-group">
                 <span class="input-group-text">
                   <svg class="icon">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-calendar"></use>
                   </svg>
                 </span>
                 <input class="form-control" id="DOB" name="DOB" type="date" placeholder="Date of Birthday" value="<?php echo $row['DOB'];?>" disabled>
@@ -182,7 +182,7 @@ require('include/right-side-navbar.php');
               <div class="input-group">
                 <span class="input-group-text">
                   <svg class="icon">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-calendar"></use>
                   </svg>
                 </span>
                 <input class="form-control" id="JoiningDate" name="JoiningDate" type="date" placeholder="Joining Date" value="<?php echo $row['JoiningDt'];?>" disabled>
@@ -193,7 +193,7 @@ require('include/right-side-navbar.php');
               <div class="input-group">
                 <span class="input-group-text">
                   <svg class="icon">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                   </svg>
                 </span>
                 <input class="form-control" id="Department" name="Department" type="text" placeholder="Joining Date" value="<?php echo $row['DepartmentName'];?>" disabled>
@@ -204,7 +204,7 @@ require('include/right-side-navbar.php');
                 <div class="input-group">
                   <span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                     </svg>
                   </span>
                   <input class="form-control" id="Designation" name="Designation" type="text" placeholder="Designation" value="<?php echo $row['DesignationName'];?>" disabled>
@@ -215,7 +215,7 @@ require('include/right-side-navbar.php');
                 <div class="input-group">
                   <span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-location-pin"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-location-pin"></use>
                     </svg>
                   </span>
                   <textarea class="form-control" id="Address" name="Address" type="text" placeholder="Address" disabled><?php echo $row['Address'];?></textarea>
@@ -228,7 +228,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Employee Code ID :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="EmpCode" name="EmpCode" placeholder="EmpCode" value="<?php echo $row['EmpCode'];?>" disabled>
               </div>
@@ -238,7 +238,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Username :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="UserName" name="UserName" placeholder="Username" value="<?php echo $row['UserName'];?>" required>
               </div>
@@ -248,7 +248,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Mobile Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="MobileNumber" name="MobileNumber" placeholder="Mobile Number" value="<?php echo $row['Number'];?>" disabled>
               </div>
@@ -257,7 +257,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Office Mobile Number :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-phone"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-phone"></use>
                 </svg></span>
                 <input class="form-control" type="text" id="OfficeMobileNumber" name="OfficeMobileNumber" placeholder="Office Mobile Number" maxlength="10"
                  value="<?php echo $row['OfficeMobileNumber'];?>" required oninput="validateMobileNumber(this)">
@@ -268,7 +268,7 @@ require('include/right-side-navbar.php');
               <p class="mb-0" align="left">Email :</p>
               <div class="input-group"><span class="input-group-text">
                 <svg class="icon">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
                 </svg></span>
                 <input class="form-control" type="email" id="Email" name="Email" placeholder="Email" value="<?php echo $row['Email'];?>" disabled>
               </div>
@@ -278,7 +278,7 @@ require('include/right-side-navbar.php');
                 <div class="input-group">
                   <span class="input-group-text">
                     <svg class="icon">
-                      <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-notes"></use>
+                      <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-notes"></use>
                     </svg>
                   </span>
                   <input class="form-control" id="Designation" name="Designation" type="text" placeholder="Designation" value="<?php echo $row['DesignationName'];?>" disabled>

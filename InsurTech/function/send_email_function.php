@@ -2,8 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once '../vendor/autoload.php'; // Adjust path as needed
-//require_once '../include/config.php'; // Your DB connection file
+require_once 'vendor/autoload.php';
 
 function send_custom_email($to_email, $subject, $body, $signature_type = 1) {
     global $conn;

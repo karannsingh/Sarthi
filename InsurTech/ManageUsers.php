@@ -112,19 +112,19 @@ $companies = mysqli_query($conn, "SELECT * FROM master_company WHERE IsDeleted =
         <div>
           <a href="AddUsers.php" class="btn btn-primary">
             <svg class="icon me-1">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user-plus"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user-plus"></use>
             </svg>
             Add New User
           </a>
           <a href="UserAccessManagement.php" class="btn btn-info ms-1">
             <svg class="icon me-1">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
             </svg>
             Manage Access Controls
           </a>
           <a href="ManageUsers.php" class="btn btn-primary ms-1">
             <svg class="icon me-1">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-reload"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-reload"></use>
             </svg>
             Refresh
           </a>
@@ -198,17 +198,17 @@ $companies = mysqli_query($conn, "SELECT * FROM master_company WHERE IsDeleted =
                                     <ul class="dropdown-menu" aria-labelledby="actionDropdown'.$user['UserOID'].'">
                                         <li><a class="dropdown-item" href="EditUser.php?id='.$user['UserOID'].'">
                                             <svg class="icon me-2">
-                                                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-pencil"></use>
+                                                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-pencil"></use>
                                             </svg> Edit
                                         </a></li>
                                         <li><a class="dropdown-item" href="update_role.php?id='.$user['UserOID'].'">
                                             <svg class="icon me-2">
-                                                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-settings"></use>
+                                                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-settings"></use>
                                             </svg> Update Role
                                         </a></li>
                                         <li><a class="dropdown-item" href="UserAccessManagement.php?id='.$user['UserOID'].'">
                                             <svg class="icon me-2">
-                                                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                                                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                                             </svg> Access Controls
                                         </a></li>
                                         <li><hr class="dropdown-divider"></li>';
@@ -216,25 +216,25 @@ $companies = mysqli_query($conn, "SELECT * FROM master_company WHERE IsDeleted =
                                         if($user['Status'] == 1) {
                                             echo '<li><a class="dropdown-item text-warning status-toggle" href="#" data-id="'.$user['UserOID'].'" data-status="'.$user['Status'].'" data-action="deactivate">
                                                 <svg class="icon me-2">
-                                                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user-unfollow"></use>
+                                                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user-unfollow"></use>
                                                 </svg> Deactivate
                                             </a></li>';
                                         } else {
                                             echo '<li><a class="dropdown-item text-success status-toggle" href="#" data-id="'.$user['UserOID'].'" data-status="'.$user['Status'].'" data-action="activate">
                                                 <svg class="icon me-2">
-                                                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user-follow"></use>
+                                                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user-follow"></use>
                                                 </svg> Activate
                                             </a></li>';
                                         }
                                         
                                         echo '<li><a class="dropdown-item text-primary reset-password" href="#" data-id="'.$user['UserOID'].'">
                                             <svg class="icon me-2">
-                                                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-lock-unlocked"></use>
+                                                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-lock-unlocked"></use>
                                             </svg> Reset Password
                                         </a></li>
                                         <li><a class="dropdown-item text-danger delete-user" href="#" data-id="'.$user['UserOID'].'">
                                             <svg class="icon me-2">
-                                                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-trash"></use>
+                                                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-trash"></use>
                                             </svg> Delete
                                         </a></li>
                                     </ul>

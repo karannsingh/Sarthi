@@ -94,7 +94,7 @@ if ($userId > 0) {
         <div>
           <a href="ManageUsers.php" class="btn btn-secondary">
             <svg class="icon me-1">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-arrow-left"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-arrow-left"></use>
             </svg>
             Back to User List
           </a>
@@ -163,7 +163,7 @@ if ($userId > 0) {
                             <td>
                                 <a href="UserAccessManagement.php?id='.$access['UserOID'].'" class="btn btn-sm btn-primary">
                                     <svg class="icon">
-                                        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-pencil"></use>
+                                        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-pencil"></use>
                                     </svg>
                                 </a>
                             </td>
@@ -231,7 +231,7 @@ if ($userId > 0) {
               <a href="UserAccessManagement.php" class="btn btn-secondary">Cancel</a>
               <button type="submit" name="update_access" class="btn btn-primary">
                 <svg class="icon me-1">
-                  <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-save"></use>
+                  <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-save"></use>
                 </svg>
                 Save Changes
               </button>
