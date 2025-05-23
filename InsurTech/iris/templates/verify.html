@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Verification</title>
+</head>
+<body>
+  <h1>Employee Iris Verification</h1>
+  <label>Employee ID: </label>
+  <input type="text" id="employee_id" required><br>
+  <video id="video" autoplay style="display:none;"></video>
+  <canvas id="canvas" style="display:none;"></canvas>
+  <p id="result"></p>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+    let intervalId = null;
+    let lastEmployeeId = null;
+    let stream = null;
+    let verificationInProgress = false;
+    let stopVerification = false; 
+
+    // Start Webcam Stream
+    async function startCamera() {
+      try {
+        stopVerification = false;
+        if (!stream) {
+          stream = await navigator.mediaDevices.getUserMedia({ video: true });
+          video.srcObject = stream;
+          video.style.display = 'block';
+        }
+      } catch (err) {
+        console.error('Error accessing camera:', err);
+      }
+    }
+
+    // Stop Webcam Stream
+    function stopCamera() {
+      if (stream) {
+        stopVerification = true;
+        clearInterval(intervalId); // Stop capturing
+
+        // Stop all video tracks
+        stream.getTracks().forEach(track => {
+          if (track.readyState === 'live') {
+            track.stop();
+          }
+        });
+
+        // Ensure video stops properly
+        video.srcObject = null;
+        video.style.display = 'none';
+        stream = null; // Reset stream for next use
+      }
+    }
+
+    // Capture Image and Send for Verification
+    function captureImage() {
+      if (verificationInProgress || stopVerification) return; 
+
+      const employeeId = document.getElementById('employee_id').value.trim();
+      const resultElement = document.getElementById('result');
+
+      if (!employeeId) {
+        resultElement.innerText = 'Please enter your Employee ID.';
+        resultElement.style.color = 'red';
+        return;
+      }
+
+      canvas.width = video.videoWidth || 640;
+      canvas.height = video.videoHeight || 480;
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+      const imageDataURL = canvas.toDataURL('image/jpeg');
+
+      verificationInProgress = true;
+
+      fetch('/verify', {
+        method: 'POST',
+        body: JSON.stringify({ image: imageDataURL, employee_id: employeeId }),
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          resultElement.innerText = 'Verification Successful!';
+          resultElement.style.color = 'green';
+          stopCamera(); // Stop camera on success
+        } else if (data.message.includes('Employee not found')) {
+          resultElement.innerText = 'Employee Not Found!';
+          resultElement.style.color = 'orange';
+          stopCamera(); // Stop camera if employee doesn't exist
+        } else {
+          resultElement.innerText = 'Error: ' + data.message;
+          resultElement.style.color = 'red';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        resultElement.innerText = 'An error occurred during verification.';
+        resultElement.style.color = 'red';
+      })
+      .finally(() => {
+        verificationInProgress = false;
+      });
+    }
+
+    // Start or Restart Verification
+    function startContinuousVerification() {
+      const employeeIdInput = document.getElementById('employee_id');
+
+      employeeIdInput.addEventListener('input', async () => {
+        const employeeId = employeeIdInput.value.trim();
+
+        if (!employeeId) {
+          stopCamera();
+          return;
+        }
+
+        // Restart if Employee ID changes or verification is not running
+        if (employeeId !== lastEmployeeId || !intervalId) {
+          lastEmployeeId = employeeId;
+          clearInterval(intervalId);
+          await startCamera();
+          intervalId = setInterval(captureImage, 1000);
+        }
+      });
+    }
+
+    startContinuousVerification();
+  </script>
+</body>
+</html>

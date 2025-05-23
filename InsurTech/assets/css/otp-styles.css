@@ -1,0 +1,61 @@
+/* OTP Management System Styles */
+
+/* OTP Card Styles */
+.otp-card {
+  transition: all 0.3s ease;
+}
+
+.otp-card.viewed {
+  opacity: 0.8;
+}
+
+.otp-card .viewed-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0 0.25rem 0 0.25rem;
+}
+
+/* Spinner animation for refresh icons */
+.refresh-icon.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Border top styles */
+.border-top-2 {
+  border-top-width: 2px !important;
+}
+
+/* OTP text styles */
+.otp-text {
+  letter-spacing: 0.05rem;
+  transition: all 0.3s ease;
+}
+
+.otp-text.revealed {
+  font-weight: bold;
+  color: #495057;
+}
+
+/* Alert animations */
+.alert {
+  transition: all 0.3s ease;
+}
+
+/* Copy button animations */
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+/* Time badge styles */
+.time-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.3rem;
+}
