@@ -15,10 +15,10 @@ ob_start();
 session_start();
 
 // DB connection
-$server = "localhost:3306";
-$user = "root";
-$pass = "";
-$database = "insurance";
+$server = "127.0.0.1";
+$user = "u766188297_DBInsurTech";
+$pass = "R]a*qD;s9";
+$database = "u766188297_InsurTech";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 if (!$conn) {
