@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <button class="header-toggler px-md-0 me-md-3 d-md-none" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
       <svg class="icon icon-lg">
-        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-menu"></use>
+        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-menu"></use>
       </svg>
     </button>
     <a class="header-brand d-md-none" href="#">
@@ -30,7 +30,7 @@
           </div>
           <a class="dropdown-item" href="profile.php">
             <svg class="icon me-2">
-              <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+              <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
             </svg> Profile
           </a>
           <?php
@@ -38,7 +38,7 @@
             ?>
             <a class="dropdown-item " href="TimeSheetNew.php">
               <svg class="icon me-2">
-                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-calendar"></use>
+                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-calendar"></use>
               </svg> Attendance
             </a>
             <?php
@@ -50,7 +50,7 @@
           <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="logout.php">
               <svg class="icon me-2">
-                <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-account-logout"></use>
               </svg> Logout
             </a>
         </div>
@@ -58,7 +58,7 @@
     </ul>
     <button class="header-toggler px-md-0 me-md-3" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside')).show();" id="message">
       <svg class="icon icon-lg">
-        <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-applications-settings"></use>
+        <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-applications-settings"></use>
       </svg>
     </button>
   </div>
