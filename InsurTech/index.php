@@ -69,7 +69,7 @@ require('include/right-side-navbar.php');
                 <div class="card shadow-sm rounded-3 h-100">
                   <div class="card-body">
                     <h5 class="card-title">
-                      <img src="assets/img/company/icici.png" alt="ICICI Logo">
+                      <img src="assets/img/company/icici.PNG" alt="ICICI Logo">
                       <a href="https://nysa.icicilombard.com/#/login" target="_blank" class="redirect-icon">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
