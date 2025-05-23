@@ -65,13 +65,13 @@ if (isset($_POST['submit'])) {
                 <!-- <p class="text-medium-emphasis">Sign In to your account</p> -->
                 <div class="input-group mb-3 mt-4"><span class="input-group-text">
                   <svg class="icon">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-user"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-user"></use>
                   </svg></span>
                   <input class="form-control" type="text" id="username" name="username" placeholder="Email ID" required>
                 </div>
                 <div class="input-group mb-4"><span class="input-group-text">
                   <svg class="icon">
-                    <use xlink:href="vendor/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                    <use xlink:href="assets/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
                   </svg></span>
                   <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
                   <span class="input-group-text toggle-password" data-target="password">
@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
     </div>
   </div>
   <!-- CoreUI and necessary plugins-->
-  <script src="vendor/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
+  <script src="assets/@coreui/coreui-pro/js/coreui.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
