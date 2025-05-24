@@ -102,28 +102,13 @@ if (isset($_POST['AddUser'])) {
             // Commit transaction
             mysqli_commit($conn);
 
+            $formattedStart = date("g:i A", strtotime($shiftStart));
+            $formattedEnd = date("g:i A", strtotime($shiftEnd));
+            $formattedCutoff = date("g:i A", strtotime($lateCutoff));
+            $loginLink = "https://sarthii.co.in/InsurTech/login.php";
+
             $subject = "Welcome to Our Family!";
-            $body = "Dear <strong>$firstName</strong>,
-
-Welcome to <strong>Sarthi Enterprises</strong>! We are delighted to have you with us.
-
-Your account has been successfully created and is now active.
-
-<strong>Email ID:</strong> $email
-<strong>Temporary Password:</strong> $randomPassword
-Please <a href=\"$loginUrl\" target=\"_blank\">click here to login</a> and change your password.
-
-<strong>Other Details:</strong>
-Username: $username
-Contact Number: $mobile
-Joining Date: $joiningDate
-
-<strong>Shift Timing Details:</strong>
-Shift Start Time: $shiftStartFormatted
-Shift End Time: $shiftEndFormatted
-Late Cut Off Time: $lateCutoffFormatted
-
-If you have any questions or need assistance, please don’t hesitate to contact us.";
+            $body = "Dear $firstName,\n\nWelcome to <strong>Sarthi Enterprises</strong>! We are delighted to have you with us.\n\nYour account has been successfully created and is now active. Below is your <strong>Credentials</strong>, Please Don't share with anyone.\n<strong>Email ID:</strong> $email\n<strong>Temporary Password:</strong> $randomPassword\nPlease <a href=\"$loginLink\" target=\"_blank\">click here</a> to login and change your password\n\n<strong>Other Details:</strong>\n<strong>Username:</strong> $username\n<strong>Contact Number:</strong> $mobile\n<strong>Joining Date:</strong> $joiningDate\n\n<strong>Shift Timing Details:</strong>\n<strong>Shift Start Time:</strong> $formattedStart\n<strong>Shift End Time:</strong> $formattedEnd\n<strong>Late Cutoff Time:</strong> $formattedCutoff\n\nIf you have any questions or need assistance, please don't hesitate to contact us.";
 
             // Send email (Example: use Signature 1)
             send_custom_email($email, $subject, $body, 1);
