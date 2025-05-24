@@ -95,22 +95,24 @@ if ($role == '2') {
             ORDER BY mgr.UserName, tl.UserName, emp.UserName";
 }
 
-$result = $conn->query($sql);
+if($role != '1'){
+  $result = $conn->query($sql);
 
-while ($row = $result->fetch_assoc()) {
-    $manager = $row['ManagerName'];
-    $teamLeader = $row['TeamLeaderName'];
-    $employee = $row['EmployeeName'];
+  while ($row = $result->fetch_assoc()) {
+      $manager = $row['ManagerName'];
+      $teamLeader = $row['TeamLeaderName'];
+      $employee = $row['EmployeeName'];
 
-    if (!isset($tree[$manager])) {
-        $tree[$manager] = [];
-    }
-    if ($teamLeader && !isset($tree[$manager][$teamLeader])) {
-        $tree[$manager][$teamLeader] = [];
-    }
-    if ($employee) {
-        $tree[$manager][$teamLeader][] = $employee;
-    }
+      if (!isset($tree[$manager])) {
+          $tree[$manager] = [];
+      }
+      if ($teamLeader && !isset($tree[$manager][$teamLeader])) {
+          $tree[$manager][$teamLeader] = [];
+      }
+      if ($employee) {
+          $tree[$manager][$teamLeader][] = $employee;
+      }
+  }
 }
 ?>
 
