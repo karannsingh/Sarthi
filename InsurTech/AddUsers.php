@@ -103,7 +103,27 @@ if (isset($_POST['AddUser'])) {
             mysqli_commit($conn);
 
             $subject = "Welcome to Our Family!";
-            $body = "Dear $firstName,\n\nWelcome to Sarthi Enterprises! We are delighted to have you with us.\n\nYour account has been successfully created and is now active.\nEmail ID: $$email\nTemporary Password: $randomPassword\nPlease login and change your password.\n\nOther Details:\nUsername: $username\nContact Number: $mobile\nJoining Date: $joiningDate\n\nShift Timing Details:\nShift Start Time: $shiftStart\nShift End Time: $shiftEnd\n Late Cutoff Time: $lateCutoff\n\nIf you have any questions or need assistance, please don't hesitate to contact us.";
+            $body = "Dear <strong>$firstName</strong>,
+
+Welcome to <strong>Sarthi Enterprises</strong>! We are delighted to have you with us.
+
+Your account has been successfully created and is now active.
+
+<strong>Email ID:</strong> $email
+<strong>Temporary Password:</strong> $randomPassword
+Please <a href=\"$loginUrl\" target=\"_blank\">click here to login</a> and change your password.
+
+<strong>Other Details:</strong>
+Username: $username
+Contact Number: $mobile
+Joining Date: $joiningDate
+
+<strong>Shift Timing Details:</strong>
+Shift Start Time: $shiftStartFormatted
+Shift End Time: $shiftEndFormatted
+Late Cut Off Time: $lateCutoffFormatted
+
+If you have any questions or need assistance, please don’t hesitate to contact us.";
 
             // Send email (Example: use Signature 1)
             send_custom_email($email, $subject, $body, 1);
